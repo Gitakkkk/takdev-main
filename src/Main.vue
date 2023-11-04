@@ -1,38 +1,45 @@
 <template>
-  <div class="app">
+  <div class="main">
     <h1 class="title">Takdev</h1>
-    <!-- <router-view /> -->
+    <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
-  components: {},
+  name: 'MainPage',
 };
 </script>
 
 <style>
-html {
+html,
+body {
   margin: 0;
   padding: 0;
-  background-color: #ece6cc;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .title {
-  font-size: 5em;
-  font-weight: 300;
-  margin-bottom: 0.25em;
-  color: #2c3e50;
+  font-size: 3.5em;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: #3498db;
+  text-shadow: 2px 2px 4px rgba(52, 152, 219, 0.7);
+  text-align: center;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
-.app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.main {
+  font-family: 'Arial', sans-serif;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-  background-color: #ece6cc;
+  color: #555;
+  padding: 20px;
+  margin: 20px;
 }
 </style>

@@ -1,10 +1,20 @@
 import { createWebHistory, createRouter } from 'vue-router';
-import List from './components/List.vue';
+import ProjectCard from './components/ProjectCard';
+import Blog from './components/Blog';
+import Admin from './components/Admin';
 
 const routes = [
   {
-    path: '/list',
-    component: List,
+    path: '/',
+    component: ProjectCard,
+  },
+  {
+    path: '/blog',
+    component: Blog,
+  },
+  {
+    path: '/admin',
+    component: Admin,
   },
 ];
 
