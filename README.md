@@ -1,5 +1,3 @@
-### Toy Project Frontend
-
 ### Commit message convention
 
 <ol>
