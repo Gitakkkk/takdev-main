@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h1 class="title">Takdev</h1>
+    <h1 class="title" @click="goToMain">Takdev</h1>
     <router-view />
   </div>
 </template>
@@ -8,6 +8,11 @@
 <script>
 export default {
   name: 'MainPage',
+  methods: {
+    goToMain() {
+      this.$router.push('/');
+    },
+  },
 };
 </script>
 
@@ -28,11 +33,13 @@ body {
   font-size: 3.5em;
   font-weight: 700;
   margin-bottom: 0.5em;
-  color: #3498db;
-  text-shadow: 2px 2px 4px rgba(52, 152, 219, 0.7);
+  color: #000000;
   text-align: center;
   margin-left: 20px;
-  cursor: pointer;
+}
+
+.title:hover {
+  text-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .main {

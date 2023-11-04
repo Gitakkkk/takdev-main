@@ -1,6 +1,6 @@
 <template>
   <div class="project-cards">
-    <div class="project-card" @click="goToBlog">
+    <div class="project-card" @click="showPrepareAlert">
       <img src="https://takdev.s3.ap-northeast-2.amazonaws.com/public/favicon.ico" alt="Blog thumnail image" />
       <h2>Blog</h2>
       <h5>Vue.js 적응</h5>
@@ -24,7 +24,7 @@ export default {
       this.$router.push('/admin');
     },
     showPrepareAlert() {
-      alert('준비 중입니다.');
+      alert('준비 중인 페이지입니다.');
     },
   },
 };
@@ -58,7 +58,7 @@ export default {
 
 .project-card img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
